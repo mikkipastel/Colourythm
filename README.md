@@ -32,26 +32,26 @@ Then this library feature is genarate text color with backgroud color and result
 ## Usage
 You can get white/black from background for dynamic use in other module and application by put your background color at parameter to generate in function genTextBWcolorFromBG()
 
-- put rgb color : `Colourythm().genTextBWcolorFromBg(<r>, <g>, <b>)`
+- put rgb color : `Colourythm().genTextBWcolorFromBg(r: Int, g: Int, b: Int)`
 
 ```kotlin
 textSample.setTextColor(Colourythm().genTextBWcolorFromBg(233, 30, 99))
 ```
 
-- put hex color : `Colourythm().genTextBWcolorFromBg(<hex_color>)`
+- put hex color : `Colourythm().genTextBWcolorFromBg(rgb: Int)`
 
 ```kotlin
 textSample.setTextColor(Colourythm().genTextBWcolorFromBg(0xd32f2f))
 ```
 
-- put resource color: `Colourythm().genTextBWcolorFromBg(this, <color>)`
+- put resource color: `Colourythm().genTextBWcolorFromBg(context: Context, resource: Int)`
 
 ```kotlin
 val color = R.color.colorBrown50
 textSample.setTextColor(Colourythm().genTextBWcolorFromBg(this, color))
 ```
 
-or `Colourythm().genTextBWcolorFromBg(<color>)`
+or `Colourythm().genTextBWcolorFromBg(rgb: Int)`
 
 ```kotlin
 val color = ContextCompat.getColor(this, R.color.colorGrey900)
